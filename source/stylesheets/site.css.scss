@@ -9,3 +9,13 @@ body{
   background:#000;
   color: #fff;
 }
+
+.logo{
+  text-align: center;
+  img{
+    max-width: 450px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
