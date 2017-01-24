@@ -1,5 +1,6 @@
 .wrapper{
   @include outer-container;
+  padding-bottom: 100px;
 }
 .logo{
   @include span-columns(8);
@@ -21,4 +22,19 @@
   @include span-columns(8);
   @include shift(2);
   @include omega();
+}
+.concert-row{
+  @include span-columns(12);
+  @include omega();
+}
+.fecha{
+  @include span-columns(4 of 12);
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.descripcion{
+  @include span-columns(8 of 12);
+  @include omega();
+  text-align: left;
 }
