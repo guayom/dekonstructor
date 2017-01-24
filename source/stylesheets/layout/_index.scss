@@ -45,6 +45,12 @@
   @include span-columns(8 of 12);
   @include omega();
   text-align: left;
+   a{
+     color: #fff;
+     font-weight: bold;
+     margin-top: 10px;
+     display: inline-block;
+   }
 }
 .redes{
   @include span-columns(8);
