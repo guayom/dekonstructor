@@ -22,10 +22,18 @@
   @include span-columns(8);
   @include shift(2);
   @include omega();
+
+  iframe{
+    max-width: 790px;
+  }
+}
+.conciertos{
+  @include span-columns(8);
+  @include shift(2);
 }
 .concert-row{
-  @include span-columns(12);
-  @include omega();
+  //@include span-columns(8);
+  //@include shift(2);
 }
 .fecha{
   @include span-columns(4 of 12);
@@ -37,4 +45,31 @@
   @include span-columns(8 of 12);
   @include omega();
   text-align: left;
+}
+.redes{
+  @include span-columns(8);
+  @include shift(2);
+  padding: 40px 0;
+
+  ul{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    display: inline-block;
+    padding: 0;
+  }
+
+  a{
+    color: #fff;
+    font-size: 3em;
+    padding: 20px;
+    text-decoration: none;
+    &:hover{
+      color: #DF0205;
+    }
+  }
 }

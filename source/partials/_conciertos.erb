@@ -1,14 +1,16 @@
-<h2>Próximos conciertos</h2>
-<hr/>
-<% data.conciertos.each do |concierto| %>
-  <div class="concert-row">
-    <div class="fecha">
-      <%= concierto.fecha %>
+<div class="conciertos">
+  <h2>Próximos conciertos</h2>
+  <hr/>
+  <% data.conciertos.each do |concierto| %>
+    <div class="concert-row">
+      <div class="fecha">
+        <%= concierto.fecha %>
+      </div>
+      <div class="descripcion">
+        <%= concierto.lugar %>
+        <%= concierto.hora %>
+        <%= concierto.cover %>
+      </div>
     </div>
-    <div class="descripcion">
-      <%= concierto.lugar %>
-      <%= concierto.hora %>
-      <%= concierto.cover %>
-    </div>
-  </div>
-<% end %>
+  <% end %>
+</div>
