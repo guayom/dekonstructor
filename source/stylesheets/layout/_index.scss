@@ -5,9 +5,11 @@
   @include span-columns(8);
   @include shift(2);
   @include omega();
-  margin: 20px 0;
+  padding: 20px 0;
+
   img{
     max-width: 100%;
+
   }
 }
 .cover{
