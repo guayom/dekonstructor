@@ -2,10 +2,15 @@
   <ul>
     <% data.redes.each do |red| %>
       <li>
-        <a href="<%= red.url %>" class="<%= red.network %>" target="_blank">
+        <a href="<%= red.url %>" target="_blank">
           <i class="fa fa-<%= red.network %>"></i>
         </a>
       </li>
     <% end %>
+    <li>
+      <a href="mailto:dekonstructor.cr@gmail.com" target="_blank">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
   </ul>
 </div>
