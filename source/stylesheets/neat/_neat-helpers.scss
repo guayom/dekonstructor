@@ -9,3 +9,7 @@
 @import "settings/grid";
 @import "settings/visual-grid";
 @import "settings/disable-warnings";
+
+// Define your breakpoints
+$tablet: new-breakpoint(max-width 768px 8);
+$mobile: new-breakpoint(max-width 480px 4);

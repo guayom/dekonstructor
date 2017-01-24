@@ -11,18 +11,15 @@
   }
 }
 .cover{
-  @include span-columns(8);
-  @include shift(2);
+  @include span-columns(6);
   @include omega();
   img{
     max-width: 100%;
   }
 }
 .players{
-  @include span-columns(8);
-  @include shift(2);
+  @include span-columns(6);
   @include omega();
-
   iframe{
     max-width: 790px;
   }
@@ -78,4 +75,16 @@
       color: #DF0205;
     }
   }
+  @media screen and (max-width: 768px){
+        a{
+          font-size: 2em;
+          padding: 10px;
+        }
+    }
+}
+.cover, .players, .redes, .logo, .conciertos{
+  @media screen and (max-width: 768px){
+        @include span-columns(10);
+        @include shift(1);
+    }
 }
