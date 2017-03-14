@@ -29,11 +29,13 @@ end
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def get_date(date)
+    require 'date'
+    I18n.locale = :es
+    "#{I18n.localize date, format: :long}"
+  end
+end
 
 # Build-specific configuration
 configure :build do

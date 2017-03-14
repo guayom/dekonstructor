@@ -1,14 +1,15 @@
 <div class="conciertos">
-  <h2>Concierto de presentación del demo</h2>
+  <h2>Próximos conciertos</h2>
   <hr/>
-  <% data.conciertos.each do |concierto| %>
+  <% dato.conciertos.each do |concierto| %>
     <div class="concert-row">
       <div class="fecha">
-        <%= concierto.fecha %>
+        <%= get_date(concierto.fecha_y_hora) %>
       </div>
       <div class="descripcion">
         <%= concierto.lugar %><br/>
-        <%= concierto.hora %><br/>
+        <%
+        <%=# concierto.fecha_y_hora.inspect %><br/>
         <%= concierto.cover %>
         <br/>
         <a href="<%= concierto.link %>" target="_blank">Más info ></a>
